@@ -11,7 +11,7 @@ export function Search({search, setSearch, filter, setFilter}) {
     };
 
     return (
-        <div className="max-w-[84rem] w-[90%] mx-auto my-15 flex justify-between gap-2">
+        <div className="max-w-[84rem] w-[95%] mx-auto my-15 flex flex-col sm:flex-row justify-between gap-2">
             <input className="bg-stone-700 py-1 px-1.5 sm:px-2.5 outline-0"
                 type="text"
                 placeholder="Search"
@@ -19,7 +19,7 @@ export function Search({search, setSearch, filter, setFilter}) {
                 onChange={handleInputChange}
             />
 
-            <select className="bg-stone-700 py-1.5 px-2.5 outline-0"
+            <select className="bg-stone-700 py-1.5 px-1.5 sm:px-2.5 outline-0"
             value={filter}
             onChange={handleSelectChange}>
                 <option value="all">All</option>
